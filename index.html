@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task manager</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form onsubmit="return false">
+            <div class="form-group">
+              <label for="task">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Enter Title" onclick="removeError(this)">
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <input type="text" class="form-control" id="description" placeholder="Enter Description" onclick="removeError(this)">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Create</button>
+            <!-- <button type="submit" id="edit" class="btn btn-primary">Edit</button> -->
+          </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <table class="table" id="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">date</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+             
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+
+<script src="./scripts.js"></script>
+</body>
+
+</html>
