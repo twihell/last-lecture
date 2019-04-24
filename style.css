@@ -45,3 +45,7 @@ i {
 i:hover {
   color: #007bff;
 }
+
+#edit {
+  display: none;
+}
